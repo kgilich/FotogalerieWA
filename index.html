@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- připojení stylů -->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!-- připojení JavaScriptu -->
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <!-- div který zajistí rozmazání pozadí za zvětšenou fotografií-->
+    <div id="rozmazani"></div>
+    <!-- popup okno se zvětšenou fotografií-->
+    <div id="zobrazeniFotografie">
+        <div>
+        <h3>Právě si prohlížíš fotografii</h3>
+        <!-- tlačítko volá funkci která zavře popup okno a vypne mlhu -->
+        <button id="zavrit" onclick="zavrit()">Zavřít [X]</button>
+        <hr>
+        </div>
+        <img id="zvetsena" src="">
+    </div>
+    <!-- tělo webu -->
+    <div class="hlavni">
+        <h1>Fotogalerie</h1>
+        <p>Tuto fotogalerii vypracoval Kryštof Gilich na základě zadaného domácího úkolu. Využívá pouze HTML, CSS a JavaScript.</p>
+
+        <div class="galerie">
+            <!-- Každá jedna fotka po kliknutí zavolá funkci která fotku zobrazí zvětšenou v popup okně, v parametru jí předává ID fotky -->
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(1)" ><img src="img/1.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(2)" ><img src="img/2.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(3)" ><img src="img/3.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(4)" ><img src="img/4.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(5)" ><img src="img/5.jpg"></a></div>
+            <div id="prvekgalerie"><a onclick="zvetsitFotografii(6)" ><img src="img/6.jpg"></a></div>
+
+        </div>
+    </div>
+
+</body>
+</html>
