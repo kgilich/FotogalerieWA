@@ -1,1 +1,1 @@
-# FotogalerieWA
+# Lightweight JavaScript gallery
